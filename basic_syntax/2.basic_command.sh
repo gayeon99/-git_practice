@@ -76,3 +76,27 @@ git branch -D 브랜치명
 
 # 원격에서 삭제된 브랜치 로컬에 반영(orgin/feat1)
 git fetch --all --prune
+
+# 모든 원격 브랜치 정보 fetch
+git fetch --all
+
+# 작업중(working directory인 사항을 임시저장)
+git stas
+
+# 저장한 최신의 작업목록 꺼내서 적용
+git stash pop
+# 저장한 작업 목록 상세 조회
+git stach show -p 인덱스 번호
+# 저장목록 전체삭제
+git stach cleareee
+
+# tag관련 명령어
+git tag v1.0.0
+git tag v1.0.0 -m "1.주요사항 2.주요사항"
+
+# tag release
+# commit push와 상관없이 태그 별도 push
+git push origin v1.0.0
+
+# 태그 목록조회
+git tag
